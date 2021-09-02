@@ -1,129 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Email Template</title>
-  </head>
-  <style type="text/css">
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #f6f9fc;
-    }
-    .wrapper{
-      width: 100%;
-      table-layout: fixed;
-      background-color:#f6f9fc;
-      padding-bottom: 40px;
-    }
-    .mailbg{
-      max-width: 600px;
-      background-color: #ffffff;
-      border: 1px solid black;
-    }
-    .outer{
-      Margin: 0 auto;
-      width: 100%;
-      max-width: 400px;
-      border-spacing: 0;
-      
-    }
-.avatar {
-  vertical-align: middle;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Email</title>
+    <style type="text/css">
+     body{
+         Margin:0;
+         padding:0;
+         color:#151618;
+         background-color: #e5e5fa;
+         font-family: sans-serif;
+     }
+     table{
+         border-spacing: 0;
+     }
+     td{
+         padding:0;
+     }
+     img{
+         border: 0;
+     }
+     .wrapper{
+         width: 100%;
+         table-layout: fixed;
+     }
+     .container{
+         max-width: 600px;
+         background-color: #ffffff;
+     }
+     .news-letter{
+         Margin: 0 auto;
+         width:100%;
+         max-width: 600px;
+         border-spacing:0;
 
-.button1{
-  width: 150px;
-  height: 30px;
-  background-color:  rgb(253, 0, 84);
-}
-  </style>
-  <body>
+     }
+     .two-columns{
+         text-align: center;
+         font-size: 0;
+         padding:24px;
+
+     }
+     .two-columns .column{
+         /* width:100%; */
+         display: inline-block;
+         vertical-align: top;
+     }
+     a{
+         text-decoration: none;
+         color:#ffffff;
+         font-size: 13px;
+     }
+     p{
+        font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1600 - 300)));
+     }
+
+
+    </style>
+</head>
+<body>
     <center class="wrapper">
-      <div class="mailbg">
-        <table class="outer" align="center">
-          <tr>
-            <td>
-              <table width="100%"" style="border-spacing: 0">
+        <div class="container">
+            <table class="news-letter" align="center">
                 <tr>
-                  <td style="background-color:grey; padding:10px; text-align: center">
-                    <a href="https://www.google.com/">
-                      <img src="https://assets.codepen.io/210284/logo.png" height="50px" alt="">
-                    </a> 
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:10px;">
-              <h1>Welcome to our responsive email!</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.	</p>
-            </td>
-          </tr>
-
-          <tr>
-              <td style="padding:10px; text-align: center">
-                <a href="https://www.google.com/
-                ">
-                  <img src="https://assets.codepen.io/210284/1200x800-2.png" height="200px" width="560px" alt="">
-                </a> 
-              </td>
-            </tr>
-
-            <tr>
-                <td style="padding:10px; text-align: left">
-                  <a href="https://www.google.com/
-                  ">
-                    <img src="https://assets.codepen.io/210284/icon.png" alt="Avatar" class="avatar">
-                  </a> 
-                  <p>"Nullam mollis sapien vel cursus fermentum. Integer porttitor augue id ligula facilisis pharetra. In eu ex et elit ultricies ornare nec ac ex. Mauris sapien massa, placerat non venenatis et, tincidunt eget leo.
-
-                      Nam non ante risus. Vestibulum vitae eleifend nisl, quis vehicula justo. Integer viverra efficitur pharetra. Nullam eget erat nibh."	</p>
-                <a href ="https://www.google.com/">
-                  <button class="button1">Claim yours now</button>
-                </a>
+                    <td>
+                        <table width="100%" align="center">
+                            <tr>
+                                <td style="background-color:#5a27e4;text-align: center;padding:16px">
+                                    <a href="#"><img src="https://assets.codepen.io/210284/logo.png" width="100" alt="logo"></a>
+                                </td>
+                        </table>
                     </td>
-              </tr>
-
-              <tr>
-                  <td style="padding:10px; text-align: center">
-                    <a href="https://www.google.com/
-                    ">
-                      <img src="https://assets.codepen.io/210284/1200x800-1.png" height="200px" width="560px" alt="">
-                    </a> 
-                  </td>
                 </tr>
                 <tr>
-                    <td style="padding:10px; text-align: center">
-                     <p>
-                        Duis sit amet accumsan nibh, varius tincidunt lectus. Quisque commodo, nulla ac feugiat cursus, arcu orci condimentum tellus, vel placerat libero sapien et libero. Suspendisse auctor vel orci nec finibus.	
-                     </p>                      
+                    <td style="padding:16px 32px">
+                        <h5>Welcome to our responsive email</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Magni, expedita consequatur molestiae ad in pariatur 
+                            accusantium amet nulla ullam, sit voluptatem facere 
+                            quidem quasi ipsam, eius minus. Iure, reprehenderit iste!</p>
                     </td>
-                  </tr>
-                  <tr>
-                      <td style="padding:10px; background-color: gray; text-align: center">
-                        <a href="https://www.google.com/
-                        ">
-                          <img src="https://assets.codepen.io/210284/facebook_1.png" height="50px" width="50px" alt="">
-                          <img src="https://assets.codepen.io/210284/twitter_1.png" height="50px" width="50px" alt="">
-                        
-                      </a>
-                        <p>@ Someone Somewhere 2021</p>
-                        <a href="https://www.google.com/" >
-                          <p>Unsubscribe Instantly</p>
-                        </a> 
-                      </td>
-                    </tr>
-          
-        </table>
-      </div>
+                </tr>
+                <tr>
+                    <td>
+                        <a her="#"><img  src="https://assets.codepen.io/210284/1200x800-2.png" style="max-width: 100%;"alt="illustration"></a>
+                    </td>
+
+                </tr>
+               <tr>
+                   <td>
+                       <table>
+                           <tr>
+                               <td style="padding:16px">
+                                <table>
+                                    <tr>
+                               <td style="padding-right: 12px;">
+                                <a href="#"><img src="https://assets.codepen.io/210284/icon.png" width="100" alt="avator"></a>
+                               </td>
+                               <td>
+                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                       Quo vitae esse eaque porro necessitatibus, libero voluptatem 
+                                       facilis cumque praesentium animi dignissimos omnis magnam 
+                                       atque accusamus ab temporibus. Quia iste placeat cupiditate 
+                                       in est aperiam facere illum eligendi. Neque, maiores perferendis!</p>
+                                       <button style="all: inherit;
+                                       background: #ff3884;
+                                       padding: 8px 12px;
+                                       border-radius: 4px;"><a href="#">Clam yours Now</a></button>
+                               </td>
+                               </tr>
+                               </table>
+                               </td>
+                           </tr>
+                       </table>
+                   </td>
+               </tr>
+                <tr>
+                    <td>
+                        <a her="#"><img  src="https://assets.codepen.io/210284/1200x800-1.png" style="max-width: 100%;"alt="illustration"></a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td style="padding:16px 32px">
+                        <p style="font-size: 13px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Magni, expedita consequatur molestiae ad in pariatur 
+                            accusantium amet nulla ullam, sit voluptatem facere 
+                            quidem quasi ipsam, eius minus. Iure, reprehenderit iste!</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table width="100%" align="center">
+                            <tr>
+                                <td style="background-color:#5a27e4;text-align: center;padding-top: 16px;">
+                                    <a href="#"><img src="https://assets.codepen.io/210284/facebook_1.png" width="32" alt="logo"></a>
+                                    <a href="#"><img src="https://assets.codepen.io/210284/twitter_1.png" width="32" alt="logo"></a>
+                                    <p><a href="mailto:email@exaample.com">@ Someone Somewhere 2021</a></p>
+                                    <p><a href="#">Unsubscribe Instantly</a></p>
+                                </td>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        
     </center>
-  </body>
+    
+</body>
 </html>
